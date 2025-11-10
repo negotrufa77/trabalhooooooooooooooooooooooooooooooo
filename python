@@ -1,0 +1,9 @@
+# Variáveis de personalização
+nome_evento = "Desafio de Programação Escolar"
+numero_edicao = 3
+
+# Método 1: Usando concatenação (+)
+print("Bem-vindos à " + str(numero_edicao) + "ª edição do " + nome_evento + "!")
+
+# Método 2: Usando f-string (formatação moderna)
+print(f"Bem-vindos à {numero_edicao}ª edição do {nome_evento}!")
