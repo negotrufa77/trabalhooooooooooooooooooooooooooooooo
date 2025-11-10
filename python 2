@@ -1,0 +1,18 @@
+def calcula_lider(tempo_total, tempo1, tempo2):
+    tempo3 = tempo_total - tempo1 - tempo2
+    mais_experiente = max(tempo1, tempo2, tempo3)
+    return tempo3, mais_experiente
+
+
+nome1 = input("Nome do primeiro candidato: ")
+nome2 = input("Nome do segundo candidato: ")
+nome3 = input("Nome do terceiro candidato: ")
+
+tempo1 = int(input("Tempo de experiência do primeiro candidato: "))
+tempo2 = int(input("Tempo de experiência do segundo candidato: "))
+tempo_total = int(input("Tempo total de experiência dos três: "))
+
+tempo3, mais_experiente = calcula_lider(tempo_total, tempo1, tempo2)
+
+print("Tempo de experiência do terceiro candidato:", tempo3)
+print("O mais experiente tem:", mais_experiente, "anos de experiência.")
